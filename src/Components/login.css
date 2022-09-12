@@ -21,7 +21,8 @@
     justify-content: center;
   }
 
-  .form input[type="text"], input[type="password"], label{
+  .form input[type="text"], input[type="password"], label {
+    display: block;
     font-size: 12px;
     font-weight: 400;
     margin-bottom: 5px;
@@ -32,7 +33,7 @@
     padding-right: 10px;
   }
 
-  .form input[type="submit"]{
+  .form input[type="submit"] {
     width: 200px;
     height: 30px;
     margin-top: 10px;
