@@ -1,6 +1,5 @@
 import { useState } from "react";
 import "./App.css";
-import "../src/Components/login.css";
 import loginpng from "./Assets/login.png";
 import Home from "./Components/Home";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
@@ -18,7 +17,6 @@ function App() {
       <Home />
     ) : (
       <div className="container">
-        <h1>Employee Polls</h1>
         <div className="login-container">
           <div className="login-img">
             <img src={loginpng} alt="login" height={100} width={100} />

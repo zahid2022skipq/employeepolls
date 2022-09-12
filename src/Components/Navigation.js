@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 import "./nav.css";
 function Navigation() {
   return (
-    <div>
-      <Link className="link" to="/home">
+    <div className="container">
+      <Link className="link active" to="/home">
         Home
       </Link>
       <Link className="link" to="/leaderboard">

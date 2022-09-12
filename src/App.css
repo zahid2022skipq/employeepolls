@@ -2,5 +2,60 @@
   text-align: center;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
+
+.login-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+
+}
+  
+.login-img {
+    margin-top: -200px;
+    pointer-events: none;
+  }
+
+  .form{
+    text-align: center;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .form input[type="text"], input[type="password"], label {
+    display: block;
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 5px;
+    width: 400px;
+    height: 20px;
+    padding: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .submit {
+    width: 200px;
+    height: 30px;
+    margin-top: 50px;
+    font-size: 12px;
+    border-radius: 2px;
+    border: 1px solid rgb(48, 154, 81);
+    background-color: rgb(48, 154, 81);
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 5px;
+  }
+
+  .submit:hover{
+    background-color: rgb(22, 113, 50);
+  }
 
