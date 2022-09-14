@@ -1,6 +1,7 @@
 import React from "react";
 import Navigation from "./Navigation";
 import "./home.css";
+
 function Home() {
   const users = [
     { user: "test1", date: "4:00PM 09/13/2021", done: true },
@@ -17,7 +18,7 @@ function Home() {
         <div className="card-container">
           {users.map((u) =>
             !u.done ? (
-              <div className="card">
+              <div className="card" key={u.user}>
                 {u.user} <p>{u.date}</p>
                 <button>Show</button>
               </div>
@@ -31,7 +32,7 @@ function Home() {
         <div className="card-container">
           {users.map((u) =>
             u.done ? (
-              <div className="card">
+              <div className="card" key={u.user}>
                 {u.user} <p>{u.date}</p>
                 <button>Show</button>
               </div>
