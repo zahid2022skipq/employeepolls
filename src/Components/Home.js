@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Navigation from "./Navigation";
 import "./home.css";
 
@@ -35,33 +35,7 @@ const users = [
   },
 ];
 
-const Dashboard = (props) => {
-  const close = () => {
-    props.close();
-  };
-  return (
-    <div className="dashboard">
-      <h1>Polls by {props.name}</h1>
-      <img src={props.image} height={100} width={100} alt="profile" />
-      <button onClick={close}>Close</button>
-    </div>
-  );
-};
-
 function Home() {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const open = () => {
-    setIsOpen(true);
-  };
-
-  const close = () => {
-    setIsOpen(false);
-  };
-
-  const [name, setName] = useState("");
-  const [img, setImage] = useState("");
-
   return (
     <>
       <Navigation />
@@ -72,12 +46,7 @@ function Home() {
             !u.done ? (
               <div className="card" key={u.user}>
                 {u.user} <p>{u.date}</p>
-                <button
-                  onClick={open}
-                  onFocus={setName(u.user)(setImage(u.image))}
-                >
-                  Show
-                </button>
+                <button>Show</button>
               </div>
             ) : null
           )}
